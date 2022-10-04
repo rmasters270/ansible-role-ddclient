@@ -16,16 +16,16 @@ The host and user running the playbook must have kube config configured.
 
 ## Role Variables
 
-| Variable                | Required | Default      | Comments                  |
-|-------------------------|----------|--------------|---------------------------|
-| ddclient_namespace      | yes      | ddclient     | Kubernetes namespace      |
-| ddclient_image_tag      | yes      | v3.9.1-ls100  | [tags](https://github.com/linuxserver/docker-ddclient/tags) |
-| cloudflare_email        | no       | user@example.com | Cloudflare email address  |
-| cloudflare_key          | no       | Your-Cloudflare-APIKey | Cloudflare API Key  |
-| cloudflare_email        | no       | example.com  | Cloudflare zone           |
-| googledomains_username  | no       | my-generated-user-name | Random user name from Google Domains  |
-| googledomains_password  | no       | my-generated-password  | Random password from Google Domains   |
-| googledomains_host      | no       | my-generated-user-name | Hostname for the  |
+| Variable                | Required | Default                            | Comments                                    |
+|-------------------------|----------|------------------------------------|---------------------------------------------|
+| ddclient_namespace      | yes      | ddclient                           | Kubernetes namespace                        |
+| ddclient_image_tag      | yes      | v3.9.1-ls100                       | [tags](https://github.com/linuxserver/docker-ddclient/tags) |
+| cloudflare_email        | no       | user@example.com                   | Cloudflare email address                    |
+| cloudflare_key          | no       | Your-Cloudflare-APIKey             | Cloudflare API Key                          |
+| cloudflare_email        | no       | example.com                        | Cloudflare zone                             |
+| googledomains_username  | no       | my-generated-user-name             | Random user name from Google Domains        |
+| googledomains_password  | no       | my-generated-password              | Random password from Google Domains         |
+| googledomains_host      | no       | my-generated-user-name             | Hostname for the                            |
 
 ## Dependencies
 
