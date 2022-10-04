@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ddclient
+  labels:
+    app: ddclient
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ddclient
+  template:
+    metadata:
+      labels:
+        app: ddclient
+    spec:
+      volumes:
+        - name: ddclient-config
+          secret:
+            secretName: ddclient-secret
+      containers:
+        - name: ddclient
+          image: linuxserver/ddclient:{{ ddclient_image_tag }}
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: TZ
+              value: {{ timezone }}
+          volumeMounts:
+            - mountPath: /config
+              name: ddclient-config

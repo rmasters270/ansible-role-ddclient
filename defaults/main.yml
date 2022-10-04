@@ -1,0 +1,12 @@
+---
+
+ddclient_namespace: ddclient
+ddclient_image_tag: v3.9.1-ls100
+
+cloudflare_email: user@example.com
+cloudflare_key: Your-Cloudflare-APIKey
+cloudflare_zone: example.com
+
+googledomains_username: my-generated-user-name
+googledomains_password: my-genereated-password
+googledomains_host: myhost.example.com
