@@ -19,7 +19,7 @@ The host and user running the playbook must have kube config configured.
 | Variable               | Required | Default                | Comments                                                    |
 | ---------------------- | -------- | ---------------------- | ----------------------------------------------------------- |
 | ddclient_namespace     | yes      | ddclient               | Kubernetes namespace                                        |
-| ddclient_image_tag     | yes      | v3.11.0-ls137          | [tags](https://github.com/linuxserver/docker-ddclient/tags) |
+| ddclient_image_tag     | yes      | v3.9.1-ls100           | [tags](https://github.com/linuxserver/docker-ddclient/tags) |
 | cloudflare_email       | no       | <user@example.com>     | Cloudflare email address                                    |
 | cloudflare_key         | no       | Your-Cloudflare-APIKey | Cloudflare API Key                                          |
 | cloudflare_zone        | no       | example.com            | Cloudflare zone                                             |
