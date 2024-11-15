@@ -1,7 +1,7 @@
 ---
 
 ddclient_namespace: ddclient
-ddclient_image_tag: v3.9.1-ls100
+ddclient_image_tag: v3.11.2-ls177
 
 cloudflare_email: user@domain.tld
 cloudflare_key: Your-Cloudflare-APIKey
